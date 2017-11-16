@@ -8,10 +8,10 @@ namespace Quiz
 {
     public class Vraag
     {
-        public String Tekst { get; set; }
-        public String Antwoord { get; set; }
+        public string Tekst { get; set; }
+        public string Antwoord { get; set; }
         public int Moeilijkheidsgraad { get; set; }
-        public String Categorie { get; set; }
+        public string Categorie { get; set; }
        
         public Vraag()
         {
@@ -23,7 +23,7 @@ namespace Quiz
 
         }
 
-        public void Display()
+        public virtual void Display()
         {
             Console.WriteLine(Tekst);
         }
